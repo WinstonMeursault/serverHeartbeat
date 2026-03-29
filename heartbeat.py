@@ -1,4 +1,4 @@
-"""serverHeartbeat – high-reliability heartbeat logger for Arch Linux.
+"""serverHeartbeat - high-reliability heartbeat logger for Arch Linux.
 
 This is the main entry-point.  It:
 
