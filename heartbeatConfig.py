@@ -13,7 +13,8 @@ from datetime import datetime, timezone
 # ---------------------------------------------------------------------------
 # Paths
 # ---------------------------------------------------------------------------
-LOG_DIR: str = os.environ.get("HEARTBEAT_LOG_DIR", "./heartbeatLog")
+currentDir : str = os.path.dirname(os.path.realpath(__file__))
+LOG_DIR: str = os.environ.get("HEARTBEAT_LOG_DIR", currentDir + "/heartbeatLog")
 EVENTS_LOG: str = os.path.join(LOG_DIR, "events.jsonl")
 BOOT_ID_PATH: str = "/proc/sys/kernel/random/boot_id"
 
